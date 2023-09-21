@@ -1,0 +1,75 @@
+body,
+p {
+  font-family: "Outfit", sans-serif;
+  color: var(--text-primary);
+  font-size: 15px;
+  font-weight: 300;
+}
+
+span {
+  font-family: "Outfit", sans-serif;
+  color: var(--text-secondary);
+  font-size: 13px;
+  font-weight: 300;
+}
+
+input {
+  font-family: "Outfit", sans-serif;
+  color: var(--text-primary);
+  font-size: 24px;
+  font-weight: 300;
+  outline: none;
+  border: none;
+
+  &::placeholder {
+    color: var(--text-tertiary);
+  }
+}
+
+button {
+  font-family: "Outfit", sans-serif;
+  color: var(--text-primary);
+  font-size: 15px;
+  font-weight: 300;
+  outline: none;
+  border: none;
+  background-color: var(--color-accent);
+  cursor: pointer;
+  text-align: center;
+  transition: all 250ms ease-in-out;
+  padding: 10px 30px;
+  border-radius: $border-radius;
+
+  &:hover {
+    background-color: var(--text-primary);
+    color: var(--background-primary);
+  }
+}
+
+h1 {
+  font-family: "Outfit", sans-serif;
+  color: var(--text-primary);
+  font-size: 32px;
+  font-weight: 300;
+}
+
+h2 {
+  font-family: "Outfit", sans-serif;
+  color: var(--text-primary);
+  font-size: 24px;
+  font-weight: 300;
+}
+
+h3 {
+  font-family: "Outfit", sans-serif;
+  color: var(--text-primary);
+  font-size: 24px;
+  font-weight: 500;
+}
+
+h4 {
+  font-family: "Outfit", sans-serif;
+  color: var(--text-primary);
+  font-size: 18px;
+  font-weight: 500;
+}

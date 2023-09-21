@@ -1,0 +1,22 @@
+.trending {
+  display: flex;
+  flex-direction: column;
+  gap: $app-padding;
+
+  &__carousel-wrapper {
+    gap: $app-padding;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+  }
+
+  &__carousel-item {
+    width: 500px;
+    height: 100%;
+    border-radius: $border-radius-large;
+    display: flex;
+    flex-direction: column;
+    gap: $app-padding;
+    padding: $app-padding;
+  }
+}

@@ -1,0 +1,17 @@
+// System Color Maps:
+$colors: (
+		'color-accent': #fc4747,
+		'background-primary': #10141e,
+		'background-secondary': #161d2f,
+		'background-tertiary': #5a698f,
+		'text-primary': #ffffff,
+		'text-secondary': rgba(255, 255, 255, 0.75),
+		'text-tertiary': rgba(255, 255, 255, 0.5),
+);
+
+:root {
+	@each $color-name, $color-value in $colors {
+		--#{$color-name}: #{$color-value};
+	}
+}
+

@@ -1,0 +1,15 @@
+.layout {
+  padding: $app-padding $app-padding $app-padding
+    calc(($app-padding * 2) + $navbar-width);
+  height: 100%;
+  overflow-x: hidden;
+
+  @media (max-width: 768px) {
+    padding: $app-padding;
+  }
+
+  &__content {
+    height: calc(100% - $app-padding * 2 - 50px);
+    padding-block-end: $app-padding;
+  }
+}

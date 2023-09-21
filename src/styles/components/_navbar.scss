@@ -1,0 +1,76 @@
+.navbar {
+  width: 100px;
+  height: calc(100% - 2 * $app-padding);
+  position: absolute;
+  left: $app-padding;
+  top: $app-padding;
+  background-color: var(--background-secondary);
+  border-radius: $border-radius-large;
+  padding: $app-padding;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  gap: $app-padding * 2;
+
+  &__links-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: $app-padding;
+    height: 100%;
+
+    @media (max-width: 500px) {
+      gap: $app-padding / 2;
+    }
+  }
+
+  &__link {
+    path {
+      fill: var(--background-tertiary);
+      transition: all 250ms ease-in-out;
+    }
+
+    &:hover:not(&--active) {
+      scale: 1.1;
+
+      path {
+        fill: var(--color-accent);
+      }
+    }
+
+    &--active {
+      path {
+        fill: var(--text-primary);
+      }
+    }
+  }
+
+  &__user-box {
+    height: 40px;
+    width: 40px;
+    border-radius: $border-radius-round;
+    border: 1px solid var(--text-primary);
+
+    img {
+      height: 100%;
+    }
+  }
+
+  @media (max-width: 768px) {
+    width: 100%;
+    height: $navbar-width;
+    position: relative;
+    left: 0;
+    top: 0;
+    padding: $app-padding $app-padding / 2;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+
+    &__links-container {
+      flex-direction: row;
+    }
+  }
+}

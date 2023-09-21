@@ -1,0 +1,15 @@
+.swiper {
+  margin-left: unset;
+  margin-right: unset;
+  //width: fit-content;
+
+  &-slide,
+  &-slide-active {
+    width: 500px !important;
+    margin-right: $app-padding !important;
+  }
+
+  &-wrapper {
+    width: unset !important;
+  }
+}

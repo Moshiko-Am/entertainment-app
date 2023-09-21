@@ -1,0 +1,24 @@
+.app-header {
+  &__input-wrapper {
+    display: flex;
+    gap: $app-padding;
+    margin-block: $app-padding;
+  }
+
+  &__input {
+    width: 100%;
+    caret-color: var(--color-accent);
+    padding-bottom: $app-padding / 2;
+    border-bottom: 1px solid var(--background-tertiary);
+
+    @media (max-width: 600px) {
+      font-size: 18px;
+    }
+
+    &::placeholder {
+      @media (max-width: 600px) {
+        font-size: 18px;
+      }
+    }
+  }
+}
